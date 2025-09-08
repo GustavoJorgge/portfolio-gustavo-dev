@@ -10,7 +10,8 @@ export function Project() {
     },
     {
       title: "Fit Criativ",
-      description: "E-commerce desenvolvido para uma loja Fitness.",
+      description:
+        "E-commerce desenvolvido para uma loja de acessorios Fitness.",
       imageUrl: "/assets/img/111.jpg",
       alt: "E-commerce para loja de acessorios Fitness",
     },
