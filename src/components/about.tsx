@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 export default function About() {
   return (
-    <section className="w-full h-full min-h-[70vh] items-center justify-center  mx-auto my-12 bg-black bg-opacity-90 rounded-xl flex flex-col gap-4 text-white">
+    <section className="w-full h-full items-center justify-center  mx-auto rounded-xl flex flex-col gap-4 text-white">
       <div>
         <h2 className="mb-1 font-inter text-3xl md:text-4xl font-medium from-gray-100 flex justify-center items-center">
           Sobre <span className="text-green-400">Mim</span>
