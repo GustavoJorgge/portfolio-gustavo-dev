@@ -13,11 +13,11 @@ import {
 } from "./ui/resizable-navbar";
 
 const items = [
-  { name: "Home", link: "#Home" },
-  { name: "Sobre Mim", link: "#About" },
-  { name: "Cases", link: "#Projects" },
-  { name: "Portfolio", link: "#Portfolio" },
-  { name: "Contato", link: "#Contato" },
+  { name: "Home", link: "Home" },
+  { name: "Sobre Mim", link: "About" },
+  { name: "Cases", link: "Projects" },
+  { name: "Portfolio", link: "Portfolio" },
+  { name: "Contato", link: "Contato" },
 ];
 
 export function Header() {
@@ -26,23 +26,29 @@ export function Header() {
   const location = useLocation();
 
   const handleNavClick = (hash: string) => {
+    if (hash.toLowerCase() === "home") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+
+      if (location.pathname !== "/") {
+        navigate("/");
+      }
+      return;
+    }
+
     if (!hash.startsWith("#")) hash = `#${hash}`;
 
     if (location.pathname !== "/") {
       navigate("/" + hash);
     } else {
-      // Se já está na home, rola suavemente para a seção
       const element = document.querySelector(hash);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       } else {
-        // fallback: atualiza o hash do browser para permitir navegação por âncora
         window.location.hash = hash;
       }
     }
   };
 
-  // Quando a rota mudar para '/' com hash (ex: navegou de outra página), tenta rolar
   useEffect(() => {
     if (location.pathname === "/" && location.hash) {
       const el = document.querySelector(location.hash);
@@ -106,14 +112,6 @@ export function Header() {
               {item.name}
             </button>
           ))}
-
-          <NavbarButton
-            href="/resume/Full-Stack-cv.pdf"
-            download
-            className="mt-4 w-full"
-          >
-            My Resume
-          </NavbarButton>
         </MobileNavMenu>
       </MobileNav>
     </Navbar>

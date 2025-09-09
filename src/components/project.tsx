@@ -57,7 +57,7 @@ export function Project() {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-black bg-opacity-90">
+    <section id="Projects" className="py-20 bg-black bg-opacity-90">
       <div className="container mx-auto px-6">
         {/* Título */}
         <div className="text-center mb-12">
