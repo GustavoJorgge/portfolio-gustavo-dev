@@ -136,10 +136,10 @@ export function Project() {
           ))}
         </div>
 
-        <div className="justify-center text-center mt-12">
+        <div className="flex justify-center mt-12">
           <Button
-            size="lg"
-            className="bg-gradient-accent text-primary-foreground hover:opacity-90 transform hover:scale-105 transition-all duration-300 shadow-glow px-8 py-4"
+            href="https://github.com/GustavoJorgge"
+            className="bg-green-800 border-transparent hover:opacity-90 hover:border-gray-600 transform hover:scale-105 transition-all duration-300 shadow-glow px-8 py-4 w-auto"
           >
             <GithubLogoIcon className="w-5 h-5 mr-2" />
             Ver Mais no GitHub
