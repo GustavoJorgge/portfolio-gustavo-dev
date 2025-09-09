@@ -39,7 +39,7 @@ export function Home() {
             hidden: {},
             visible: {
               transition: {
-                staggerChildren: 0.3, // intervalo entre cada botão
+                staggerChildren: 0.2,
               },
             },
           }}
@@ -72,8 +72,8 @@ export function Home() {
 
         <div className="mt-16 w-full">
           <motion.div
-            initial={{ opacity: 0, y: 80 }} // começa invisível e deslocado para baixo
-            animate={{ opacity: 1, y: 0 }} // sobe para a posição final
+            initial={{ opacity: 0, y: 80 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.6,
               delay: 0.7,
