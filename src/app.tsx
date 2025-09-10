@@ -2,7 +2,6 @@ import About from "./components/about";
 import { Header } from "./components/header";
 import { Home } from "./components/home";
 import { Project } from "./components/project";
-import Stacks from "./components/stacks";
 import "@radix-ui/themes/styles.css";
 
 export function App() {
