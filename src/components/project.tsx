@@ -18,7 +18,7 @@ export function Project() {
         "CI/CD",
         "Integrações",
       ],
-      imageUrl: "/assets/img/111.jpg",
+      imageUrl: "/assets/cases/CE.png",
       githubUrl: "#",
       liveUrl: "#",
       alt: "Projeto - Ceci Nutricionista",
@@ -29,7 +29,7 @@ export function Project() {
       description:
         "E-commerce desenvolvido para uma loja de acessórios Fitness.",
       technologies: ["Shopify", "CSS", "Melhor Envio", "Pagar.me", "Hostinger"],
-      imageUrl: "/assets/img/111.jpg",
+      imageUrl: "/assets/cases/FitCriativ.png",
       liveUrl: "#",
       alt: "E-commerce para loja de acessórios Fitness",
       delay: "0.2s",
@@ -65,7 +65,8 @@ export function Project() {
             Meus <span className="text-green-400">Projetos</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Alguns dos meus projetos recentes como Desenvolvedor Full-Stack.
+            Alguns dos casos que atuei recentemente como Desenvolvedor
+            Full-Stack.
           </p>
           <div className="w-20 h-1 bg-green-400 mx-auto mt-4 rounded-full"></div>
         </div>

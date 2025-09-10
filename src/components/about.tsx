@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from "motion/react";
 import { useState, useEffect } from "react";
+import Stacks from "./stacks";
 
 export default function About() {
   // Lista de fotos
@@ -29,15 +30,15 @@ export default function About() {
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <div>
-        <h2 className="mb-1 font-inter text-3xl md:text-4xl font-medium flex justify-center items-center">
+      <div className="text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">
           Sobre <span className="text-green-400">Mim</span>
         </h2>
-        <p className="text-gray-400 text-center mb-4 font-inter text-base md:text-sm">
+        <p className="text-gray-400 text-lg max-w-2xl mx-auto">
           Um pouco sobre mim e minhas habilidades como Desenvolvedor.
         </p>
+        <div className="w-20 h-1 bg-green-400 mx-auto mt-4 rounded-full"></div>
       </div>
-
       <div className="flex flex-col md:flex-row gap-3">
         <motion.div
           className="flex justify-center items-center relative w-full md:w-[28rem] md:h-[28rem] max-w-[28rem] overflow-hidden rounded-2xl border border-gray-600"
@@ -99,6 +100,7 @@ export default function About() {
           </div>
         </motion.div>
       </div>
+      <Stacks />
     </motion.section>
   );
 }

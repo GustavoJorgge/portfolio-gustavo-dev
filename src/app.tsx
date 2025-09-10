@@ -12,7 +12,7 @@ export function App() {
         <Header />
         <Home />
         <About />
-        <Stacks />
+        {/* <Stacks /> */}
         <Project />
       </div>
     </div>
