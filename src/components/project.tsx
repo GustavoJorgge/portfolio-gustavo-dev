@@ -19,7 +19,7 @@ export function Project() {
         "Integrações",
       ],
       imageUrl: "/assets/cases/CE.png",
-      githubUrl: "#",
+      githubUrl: "https://github.com/GustavoJorgge/ceci-nutri",
       liveUrl: "#",
       alt: "Projeto - Ceci Nutricionista",
       delay: "0s",
