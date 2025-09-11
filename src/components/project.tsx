@@ -23,6 +23,7 @@ export function Project() {
       liveUrl: "#",
       alt: "Projeto - Ceci Nutricionista",
       delay: "0s",
+      status: "em-desenvolvimento",
     },
     {
       title: "Fit Criativ",
@@ -33,6 +34,7 @@ export function Project() {
       liveUrl: "#",
       alt: "E-commerce para loja de acessórios Fitness",
       delay: "0.2s",
+      status: "em-desenvolvimento",
     },
     {
       title: "Integração Voke",
@@ -53,16 +55,16 @@ export function Project() {
       liveUrl: "https://voke.tech",
       alt: "Projeto Integração Voke",
       delay: "0.4s",
+      status: "concluido",
     },
   ];
 
   return (
     <section id="Projects" className="py-20 bg-black bg-opacity-90">
       <div className="container mx-auto px-6">
-        {/* Título */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">
-            Meus <span className="text-green-400">Projetos</span>
+            Meus <span className="text-green-400">Cases</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Alguns dos casos que atuei recentemente como Desenvolvedor
@@ -71,7 +73,6 @@ export function Project() {
           <div className="w-20 h-1 bg-green-400 mx-auto mt-4 rounded-full"></div>
         </div>
 
-        {/* Grid de Projetos */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <Card
@@ -79,7 +80,6 @@ export function Project() {
               className="overflow-hidden bg-gray-900 border-0 shadow-lg hover:shadow-green-500/30 transition-all duration-500 transform hover:-translate-y-2 group"
               style={{ animationDelay: project.delay }}
             >
-              {/* Imagem */}
               <div className="relative overflow-hidden">
                 <img
                   src={project.imageUrl}
@@ -88,21 +88,28 @@ export function Project() {
                 />
                 <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="flex space-x-4">
-                    {project.liveUrl && (
-                      <Button
-                        href="#"
-                        className="bg-green-400 text-black hover:bg-green-500"
-                        onClick={() => window.open(project.liveUrl, "_blank")}
-                      >
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        Ver Projeto
-                      </Button>
-                    )}
+                    {project.liveUrl &&
+                      (project.status === "em-desenvolvimento" ? (
+                        <Button
+                          disabled={true}
+                          className="bg-gray-600 text-gray-300 cursor-not-allowed"
+                        >
+                          <div className="w-4 h-4 mr-2 border-2 border-gray-400 border-t-transparent rounded-full animate-spin"></div>
+                          Em Desenvolvimento
+                        </Button>
+                      ) : (
+                        <Button
+                          href={project.liveUrl}
+                          className="bg-green-400 text-black hover:bg-green-500"
+                        >
+                          <ExternalLink className="w-4 h-4 mr-2" />
+                          Ver Projeto
+                        </Button>
+                      ))}
                     {project.githubUrl && (
                       <Button
-                        href="#"
+                        href={project.githubUrl}
                         className="border-green-400 text-green-400 hover:bg-green-400 hover:text-black"
-                        onClick={() => window.open(project.githubUrl, "_blank")}
                       >
                         <GithubLogoIcon className="w-4 h-4 mr-2" />
                         Código
@@ -112,7 +119,6 @@ export function Project() {
                 </div>
               </div>
 
-              {/* Conteúdo */}
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-green-400 transition-colors">
                   {project.title}
@@ -121,7 +127,6 @@ export function Project() {
                   {project.description}
                 </p>
 
-                {/* Tecnologias */}
                 <div className="flex flex-wrap gap-2">
                   {project.technologies?.map((tech) => (
                     <span
