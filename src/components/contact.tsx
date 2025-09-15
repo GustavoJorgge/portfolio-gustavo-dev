@@ -27,7 +27,7 @@ export function Contact() {
         </div>
         <motion.a>
           <Button
-            href="https://github.com/GustavoJorgge"
+            href="https://wa.me/5531994603457"
             className="bg-green-800 border-transparent hover:opacity-90 hover:green-gray-600 transform hover:scale-105 transition-all duration-300 shadow-glow px-8 py-4 w-auto"
           >
             <MessageCircleCode className="w-5 h-5 mr-2" />
