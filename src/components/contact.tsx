@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { MessageCircleCode } from "lucide-react";
 import { Button } from "./ui/button";
-import { GithubLogoIcon } from "@phosphor-icons/react";
 
 export function Contact() {
   return (
