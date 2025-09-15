@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { MessageCircleCode } from "lucide-react";
+import { Button } from "./ui/button";
+import { GithubLogoIcon } from "@phosphor-icons/react";
 
 export function Contact() {
   return (
@@ -23,16 +25,14 @@ export function Contact() {
           </h3>
           <div className="w-20 h-1 bg-green-400 mx-auto mt-4 rounded-full"></div>
         </div>
-        <motion.a
-          href="https://wa.me/5531994603457"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-6 px-8 py-3 border border-green-300 rounded-xl text-lg font-inter text-white hover:bg-green-400 hover:text-black transition-colors flex items-center gap-2 shadow-none outline-none focus:ring-2 focus:ring-purple-400"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.97 }}
-        >
-          Vamos Conversar
-          <MessageCircleCode size={28} />
+        <motion.a>
+          <Button
+            href="https://github.com/GustavoJorgge"
+            className="bg-green-800 border-transparent hover:opacity-90 hover:green-gray-600 transform hover:scale-105 transition-all duration-300 shadow-glow px-8 py-4 w-auto"
+          >
+            <MessageCircleCode className="w-5 h-5 mr-2" />
+            Vamos Conversar
+          </Button>
         </motion.a>
       </motion.div>
     </section>
