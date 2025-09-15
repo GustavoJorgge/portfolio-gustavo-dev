@@ -1,10 +1,12 @@
-import { WhatsappLogoIcon } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
 import { MessageCircleCode } from "lucide-react";
 
 export function Contact() {
   return (
-    <section className="w-full flex justify-center items-center my-12 p-5">
+    <section
+      id="Contato"
+      className="w-full flex justify-center items-center my-12 p-5"
+    >
       <motion.div
         className="w-full  bg-[#18181b] rounded-3xl px-6 py-12 flex flex-col items-center shadow-lg"
         initial={{ opacity: 0, y: 60 }}
