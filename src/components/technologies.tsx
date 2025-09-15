@@ -40,7 +40,7 @@ export default function Technologies() {
         style={{ fontSize: "var(--font-size-lg)" }}
         className="font-semibold text-gray-300 mb-4 justify-center items-center"
       >
-        Principais Técnologias
+        Principais Tecnologias
       </h2>
       <div className="w-full md:w-3/4 md:px-0 px-4">
         <div className="w-full animate-slide-infinite inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_64px,_black_calc(100%-64px),transparent_100%)]">

@@ -17,6 +17,7 @@ export function Project() {
         "Vercel",
         "CI/CD",
         "Integrações",
+        "Prod/Homolog"
       ],
       imageUrl: "/assets/cases/CE.png",
       githubUrl: "https://github.com/GustavoJorgge/ceci-nutri",
