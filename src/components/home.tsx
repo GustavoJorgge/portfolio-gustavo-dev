@@ -56,7 +56,7 @@ export function Home() {
           </motion.a>
 
           <motion.a
-            href="https://github.com/"
+            href="https://github.com/GustavoJorgge"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-2 rounded-full border border-gray-500 text-white font-semibold shadow hover:bg-gray-800 transition-colors duration-300 flex items-center gap-2"

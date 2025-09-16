@@ -69,7 +69,7 @@ export function Header() {
             <button
               key={item.name}
               onClick={() => handleNavClick(item.link)}
-              className="text-base text-neutral-200/80 hover:text-neutral-200"
+              className="text-base text-neutral-200/80 hover:text-neutral-200 cursor-pointer"
             >
               {item.name}
             </button>
