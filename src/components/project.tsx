@@ -17,7 +17,7 @@ export function Project() {
         "Vercel",
         "CI/CD",
         "Integrações",
-        "Prod/Homolog"
+        "Prod/Homolog",
       ],
       imageUrl: "/assets/cases/CE.png",
       githubUrl: "https://github.com/GustavoJorgge/ceci-nutri",
@@ -78,7 +78,7 @@ export function Project() {
           {projects.map((project) => (
             <Card
               key={project.title}
-              className="overflow-hidden bg-gray-900 border-0 shadow-lg hover:shadow-green-500/30 transition-all duration-500 transform hover:-translate-y-2 group"
+              className="overflow-hidden bg-[#18181b] border-0 shadow-lg hover:shadow-green-500/30 transition-all duration-500 transform hover:-translate-y-2 group"
               style={{ animationDelay: project.delay }}
             >
               <div className="relative overflow-hidden">
