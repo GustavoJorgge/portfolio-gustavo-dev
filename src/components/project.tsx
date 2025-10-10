@@ -42,7 +42,7 @@ export function Project() {
       description:
         "Sustentação e Construção de Páginas que integram com CRM para geração de Leads.",
       technologies: [
-        "Vite",
+        "Next.js",
         "Node.js",
         "API REST",
         "Marketing Cloud",
