@@ -32,6 +32,10 @@ export default function Technologies() {
       name: "Figma",
       img: "/assets/figma.svg",
     },
+    {
+      name: "Next.js",
+      img: "/assets/nextjs.svg",
+    }
   ];
 
   return (
