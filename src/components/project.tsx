@@ -51,6 +51,8 @@ export function Project() {
         "AWS",
         "CI/CD",
         "SCRUM",
+        "SEO",
+        "CMS/STRAPI",
       ],
       imageUrl: "/assets/cases/Voke.png",
       liveUrl: "https://voke.tech",
