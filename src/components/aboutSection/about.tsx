@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "motion/react";
 import { useState, useEffect } from "react";
-import Stacks from "./stacks";
+import Stacks from "./items/stacks";
 
 export default function About() {
   // Lista de fotos

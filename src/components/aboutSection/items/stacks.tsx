@@ -69,7 +69,7 @@ export default function Stacks() {
               >
                 {tech}
               </span>
-            )
+            ),
           )}
         </div>
       </div>
