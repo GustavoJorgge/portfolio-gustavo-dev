@@ -1,8 +1,8 @@
 import About from "./components/aboutSection/about";
-import { Contact } from "./components/contact";
+import { Contact } from "./components/contactSection/contact";
 import { Footer } from "./components/footer";
 import { Header } from "./components/header";
-import { Home } from "./components/home";
+import { Home } from "./components/homeSection/home";
 import { Project } from "./components/projectSection/project";
 import "@radix-ui/themes/styles.css";
 

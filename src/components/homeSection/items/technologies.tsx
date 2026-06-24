@@ -1,43 +1,7 @@
-export default function Technologies() {
-  const stacks = [
-    {
-      name: "React",
-      img: "/assets/react.svg",
-    },
-    {
-      name: "Node",
-      img: "/assets/nodejs.svg",
-    },
-    {
-      name: "Docker",
-      img: "/assets/docker.svg",
-    },
-    {
-      name: "Tailwind",
-      img: "/assets/tailwind.svg",
-    },
-    {
-      name: "AWS",
-      img: "/assets/aws.svg",
-    },
-    {
-      name: "Postgres",
-      img: "/assets/postgresql.svg",
-    },
-    {
-      name: "TypeScript",
-      img: "/assets/typescript.svg",
-    },
-    {
-      name: "Figma",
-      img: "/assets/figma.svg",
-    },
-    {
-      name: "Next.js",
-      img: "/assets/nextjs.svg",
-    }
-  ];
+import { STACKS } from "./utils.ts";
 
+export default function Technologies() {
+  const stacks = STACKS;
   return (
     <section className="flex h-full w-full text-m flex-col items-center justify-center gap-4 bg-black text-white">
       <h2

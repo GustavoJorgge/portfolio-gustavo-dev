@@ -2,9 +2,14 @@ import { GithubLogoIcon } from "@phosphor-icons/react";
 import { Card } from "../ui/card";
 import { Button } from "../ui/button";
 import { ExternalLink } from "lucide-react";
-import { projects } from "./utils";
+import { PROJECTS } from "./utils";
 
 export function Project() {
+  const projects = PROJECTS.map((project, index) => ({
+    ...project,
+    delay: `${index * 0.1}s`,
+  }));
+
   return (
     <section id="Projects" className="py-20 bg-black bg-opacity-90">
       <div className="container mx-auto px-6">

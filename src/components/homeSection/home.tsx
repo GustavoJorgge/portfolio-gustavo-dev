@@ -1,6 +1,6 @@
 import { GithubLogoIcon } from "@phosphor-icons/react";
 import { motion } from "motion/react";
-import Technologies from "./technologies";
+import Technologies from "./items/technologies";
 
 export function Home() {
   return (

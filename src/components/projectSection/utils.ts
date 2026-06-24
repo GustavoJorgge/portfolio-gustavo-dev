@@ -1,6 +1,6 @@
-import type { Project } from "./types";
+import type { IProject } from "./types";
 
-export const projects: Project[] = [
+export const PROJECTS: IProject[] = [
   {
     title: "Seidor Brasil",
     description:
