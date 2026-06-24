@@ -1,67 +1,10 @@
 import { GithubLogoIcon } from "@phosphor-icons/react";
-import { Card } from "./ui/card";
-import { Button } from "./ui/button";
+import { Card } from "../ui/card";
+import { Button } from "../ui/button";
 import { ExternalLink } from "lucide-react";
+import { projects } from "./utils";
 
 export function Project() {
-  const projects = [
-    {
-      title: "Ceci Nutricionista",
-      description: "Site desenvolvido para venda de Planos Nutricionais.",
-      technologies: [
-        "Vite",
-        "React",
-        "Styled Components",
-        "Motion",
-        "Phosphor-icons",
-        "Vercel",
-        "CI/CD",
-        "Integrações",
-        "Prod/Homolog",
-      ],
-      imageUrl: "/assets/cases/CE.png",
-      githubUrl: "https://github.com/GustavoJorgge/ceci-nutri",
-      liveUrl: "#",
-      alt: "Projeto - Ceci Nutricionista",
-      delay: "0s",
-      status: "em-desenvolvimento",
-    },
-    {
-      title: "Fit Criativ",
-      description:
-        "E-commerce desenvolvido para uma loja de acessórios Fitness.",
-      technologies: ["Shopify", "CSS", "Melhor Envio", "Pagar.me", "Hostinger"],
-      imageUrl: "/assets/cases/FitCriativ.png",
-      liveUrl: "#",
-      alt: "E-commerce para loja de acessórios Fitness",
-      delay: "0.2s",
-      status: "em-desenvolvimento",
-    },
-    {
-      title: "Integração Voke",
-      description:
-        "Sustentação e Construção de Páginas que integram com CRM para geração de Leads.",
-      technologies: [
-        "Next.js",
-        "Node.js",
-        "API REST",
-        "Marketing Cloud",
-        "N8N",
-        "Azure Pipelines",
-        "AWS",
-        "CI/CD",
-        "SCRUM",
-        "SEO",
-        "CMS/STRAPI",
-      ],
-      imageUrl: "/assets/cases/Voke.png",
-      liveUrl: "https://voke.tech",
-      alt: "Projeto Integração Voke",
-      delay: "0.4s",
-      status: "concluido",
-    },
-  ];
-
   return (
     <section id="Projects" className="py-20 bg-black bg-opacity-90">
       <div className="container mx-auto px-6">

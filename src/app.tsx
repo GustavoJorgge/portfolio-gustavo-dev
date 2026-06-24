@@ -3,7 +3,7 @@ import { Contact } from "./components/contact";
 import { Footer } from "./components/footer";
 import { Header } from "./components/header";
 import { Home } from "./components/home";
-import { Project } from "./components/project";
+import { Project } from "./components/projectSection/project";
 import "@radix-ui/themes/styles.css";
 
 export function App() {
