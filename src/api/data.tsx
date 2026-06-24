@@ -13,11 +13,11 @@ export const socialMedia = [
   {
     id: 2,
     icon: <LinkedinLogoIcon size={24} />,
-    link: "https://www.linkedin.com/in/gustavojorgg/",
+    link: "https://www.linkedin.com/in/gustavojorgge/",
   },
   {
     id: 3,
     icon: <Envelope size={24} />,
-    link: "gustavojorge.dev@gmail.com",
+    link: "mailto:gustavojorge.dev@gmail.com?subject=Contato&body=Olá Gustavo, vi seu portfólio...",
   },
 ];
